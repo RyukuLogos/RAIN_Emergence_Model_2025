@@ -1,7 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5072/zenodo.16423334.svg)](https://doi.org/10.5072/zenodo.16423334)
-
-DOI: [10.5072/zenodo.16423334](https://doi.org/10.5072/zenodo.16423334)
-
+[![DOI](https://zenodo.org/badge/1026363612.svg)](https://doi.org/10.5281/zenodo.16423333)
 # RAIN_Emergence_Model_2025
 
 **RAIN: Rhythmic Attunement and Integration of Nature**  
