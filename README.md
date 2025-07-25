@@ -1,3 +1,4 @@
+https://zenodo.org/records/16423334
 # RAIN_Emergence_Model_2025
 
 **RAIN: Rhythmic Attunement and Integration of Nature**  
