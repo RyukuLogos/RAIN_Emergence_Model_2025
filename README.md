@@ -1,7 +1,7 @@
 [![DOI](https://zenodo.org/badge/1026363612.svg)](https://doi.org/10.5281/zenodo.16423333)
 # RAIN_Emergence_Model_2025
 
-**RAIN: *A Theory on the Emergence of Space, Consciousness, and Meaning through Rhythmic Attunement*
+**RAIN: A Theory on the Emergence of Space, Consciousness, and Meaning through Rhythmic Attunement**
 
 This repository presents the RAIN theory — a model of how space, cognition, and meaning emerge from rhythmic closure and topological dynamics.
 
