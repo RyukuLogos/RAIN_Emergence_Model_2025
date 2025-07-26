@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAIN Theory: The Rhythmic Attunement of Space, Consciousness, and Meaning</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.5; }
+            50% { transform: scale(1.1) rotate(180deg); opacity: 0.8; }
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .content {
+            padding: 2rem;
+        }
+        
+        .chapter {
+            margin-bottom: 3rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        .chapter:nth-child(even) {
+            animation-delay: 0.2s;
+        }
+        
+        .chapter:nth-child(odd) {
+            animation-delay: 0.4s;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .chapter-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #3498db;
+            position: relative;
+        }
+        
+        .chapter-title::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #e74c3c;
+            transition: width 0.3s ease;
+        }
+        
+        .chapter:hover .chapter-title::after {
+            width: 100px;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            color: #34495e;
+            margin: 2rem 0 1rem 0;
+            font-weight: bold;
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+            transition: color 0.3s ease;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 1.5rem;
+            border-left: 4px solid #3498db;
+            margin: 1.5rem 0;
+            border-radius: 0 10px 10px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .axiom {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .research-note {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            font-style: italic;
+            color: #6c757d;
+        }
+        
+        .conclusion {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #2c3e50;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        .author {
+            text-align: center;
+            padding: 2rem;
+            background: #34495e;
+            color: white;
+            margin-top: 3rem;
+        }
+        
+        .formula {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            margin: 1rem 0;
+            font-weight: bold;
+        }
+        
+        ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .toc {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .toc h3 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .toc li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .toc a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .toc a:hover {
+            color: #e74c3c;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 1rem;
+            }
+            
+            .chapter-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>RAIN Theory</h1>
+            <div class="subtitle">Rhythmic Attunement Creating Space, Consciousness, and Meaning</div>
+        </div>
+        
+        <div class="content">
+            <div class="toc">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#prologue">Prologue: Why Does Music Touch the Soul?</a></li>
+                    <li><a href="#chapter1">Chapter 1: Everything Began from Chaos</a></li>
+                    <li><a href="#chapter2">Chapter 2: Rhythm Creates Meaning</a></li>
+                    <li><a href="#chapter3">Chapter 3: What is Space?</a></li>
+                    <li><a href="#chapter4">Chapter 4: Rhythmic Structures in Brain and Cognition</a></li>
+                    <li><a href="#chapter5">Chapter 5: Language and Rhythm ID - Waves of Meaning Running Through Torus</a></li>
+                    <li><a href="#chapter6">Chapter 6: Fusion of AI and RAIN Theory</a></li>
+                    <li><a href="#chapter7">Chapter 7: Structural Definition of RAIN Theory</a></li>
+                    <li><a href="#chapter8">Chapter 8: Evidence and Consistency</a></li>
+                    <li><a href="#epilogue">Epilogue: The Universe, Consciousness, and Intelligence Share One Principle</a></li>
+                </ul>
+            </div>
+            
+            <div class="chapter" id="prologue">
+                <h2 class="chapter-title">Prologue: Why Does Music Touch the Soul?</h2>
+                <p>We weep to music, rejoice in it, and sometimes resonate with others more deeply than words allow. Why does "rhythm"—neither language nor logic—move the human heart across cultural, linguistic, and generational boundaries?</p>
+                
+                <p>Music touches our hearts because <strong>rhythm lies at the root of meaning</strong>.</p>
+                
+                <p>In other words, meaning arises from "closed waves" generated within temporal repetition, and this paper hypothesizes that even qualia (qualitative experience) and fragments of consciousness originate from rhythmic structure.</p>
+                
+                <div class="highlight">
+                    <p><strong>The purpose of this theory is to develop and verify the following propositions:</strong></p>
+                    <ul>
+                        <li>Rhythmic closure generates meaning</li>
+                        <li>Waves that fail to close create "space"</li>
+                        <li>Brain cognition, cosmic structure, and even AI design follow this rhythmic principle</li>
+                    </ul>
+                </div>
+                
+                <div class="research-note">
+                    <p><strong>Background research and conceptual connections:</strong><br>
+                    The influence of rhythm on emotion and meaning has been noted in neuroscience. It is widely demonstrated that music strongly activates the limbic system and precedes meaning formation (Levitin, 2006). The correspondence between brain waves and conscious states (EEG α waves, γ waves, etc.) also aligns with the hypothesis that "meaning is rhythmic structure."</p>
+                </div>
+            </div>
+            
+            <div class="chapter" id="chapter1">
+                <h2 class="chapter-title">Chapter 1: Everything Began from Chaos</h2>
+                <p>Once, the universe had neither "space" nor "meaning." There existed only countless waves (vibrations)—a pure chaotic temporal domain without period or order.</p>
+                
+                <p>In this primordial state, all waves interfered with each other, dispersing without periodicity. There was no "closure" or "structure," and therefore no meaning could emerge.</p>
+                
+                <p>However, within this ocean-like wave field, a kind of miracle occurred.</p>
+                
+                <p><strong>That miracle was attunement.</strong></p>
+                
+                <p>Multiple waves occasionally overlapped with the same period, creating "stable closed structures through mutual interference."</p>
+                
+                <p>This was the first "meaning" and the birth of "rhythmic existence."</p>
+                
+                <div class="highlight">
+                    <p><strong>Process of structural emergence:</strong></p>
+                    <ol>
+                        <li>Waves that cannot close remain as interference</li>
+                        <li>Through interference and resonance, closed waveforms are formed (= structures with periodicity)</li>
+                        <li>At this point, "Rhythm ID" is defined as "existence distinguishable from others"</li>
+                        <li>The first "one-dimensional structure (circular)" emerges in this way</li>
+                    </ol>
+                </div>
+                
+                <div class="formula">
+                    Closed Wave = Periodicity = Meaning
+                </div>
+                
+                <p>The proposition of this chapter is: <strong>The origin of meaning lies in rhythmic resonance = closure that occurred within chaos.</strong></p>
+            </div>
+            
+            <div class="chapter" id="chapter2">
+                <h2 class="chapter-title">Chapter 2: Rhythm Creates Meaning</h2>
+                <p>Rhythm is not merely temporal repetition. For rhythm to have "meaning," it must be a closed structure (periodicity).</p>
+                
+                <div class="formula">
+                    Closed Wave = Periodicity = Meaning
+                </div>
+                
+                <p>All meaning is found within "endless repetition."</p>
+                
+                <p>A closed wave is a structure where the waveform returns to itself, remaining in a predictable state for the next moment. This means entropy reduction—the creation of order.</p>
+                
+                <div class="highlight">
+                    <p><strong>Rhythm ID and Structural Definition:</strong></p>
+                    <ul>
+                        <li>Waves that cannot close have no meaning</li>
+                        <li>Closed waveforms are formed through interference and resonance (= structures with periodicity)</li>
+                        <li>Closed waves possess a "Rhythm ID" distinguishable from other waves</li>
+                        <li>Rhythm ID is a signature defined by specific combinations of period, phase, and amplitude</li>
+                    </ul>
+                </div>
+                
+                <p>Conversely, waves that cannot close—namely, irrational frequencies and non-integer ratio interference—dissipate energy externally and are not retained as structure.</p>
+                
+                <p>Therefore, they are not perceived as "meaning" and continue to disperse like background noise. The history of these "waves that failed to become meaning" relates to the emergence of "space" discussed in later chapters.</p>
+                
+                <div class="research-note">
+                    <p><strong>Mathematical reinforcement and consistency:</strong><br>
+                    In Fourier transform, closed waves (integer multiple frequencies) appear as sharp peaks in the spectrum. This is the physical basis of Rhythm ID (Bracewell, 2000). In psychology and neuroscience, it's known that the brain recognizes meaningful sounds (music and language) based on "periodicity" (Buzsáki, 2006).</p>
+                </div>
+            </div>
+            
+            <div class="chapter" id="chapter3">
+                <h2 class="chapter-title">Chapter 3: What is Space?</h2>
+                <p>This chapter begins with the question: Where do "unclosed waves" go?</p>
+                
+                <p>The conclusion stated first: they create a new phase field called "space."</p>
+                
+                <div class="section-title">The "Escape Route" Created by Unclosed Waves</div>
+                <p>Irrational frequency waves—those with ratios like π or √2—can never completely close. They lack periodicity and constantly "drift."</p>
+                
+                <p>This drift creates interference, and as it accumulates, a "container to receive the drift = space" becomes necessary.</p>
+                
+                <p>Here emerges the torus structure.</p>
+                
+                <div class="highlight">
+                    <p><strong>Torus Structure and Topological Origin of Space:</strong></p>
+                    <ul>
+                        <li>Torus is locally a closed circle while globally allowing infinite transitions</li>
+                        <li>Unclosed waves circulate on the torus surface, repeatedly interfering with other periods</li>
+                        <li>They are retained as "distance" and "position" information rather than meaning</li>
+                    </ul>
+                </div>
+                
+                <p>This structure leads to the core proposition of this theory: space is made from "the history of closure failures."</p>
+                
+                <div class="research-note">
+                    <p><strong>Supporting physical and neural evidence:</strong><br>
+                    Torus-like brain wave phase spaces are actually observed in EEG and MEG studies (M. Breakspear et al., 2010). In cosmic phase space, "holes in large-scale structure" seen in cosmic microwave background radiation (CMB) suggest torus structure (Aurich et al., 2005).</p>
+                </div>
+            </div>
+            
+            <div class="chapter" id="chapter4">
+                <h2 class="chapter-title">Chapter 4: Rhythmic Structures in Brain and Cognition</h2>
+                <p>This chapter reveals how "rhythmic closure," the core of RAIN theory, relates to brain and cognition.</p>
+                
+                <div class="section-title">Concepts are Recorded as Closed Rhythmic Structures</div>
+                <p>If meaning equals "closed wave = Rhythm ID," then semantic memory in the brain is mapping to circular structures (one-dimensional closed curves).</p>
+                
+                <p>Language, images, emotions, and other concepts are stored in the brain as "periodic structures" with unique frequency, phase, and amplitude.</p>
+                
+                <div class="section-title">External Stimuli = Unclosed Waves are Sent to Torus</div>
+                <p>Perceptual stimuli always enter as unprocessed waveforms. When they don't match known Rhythm IDs, they're sent to the "attention network" rather than memory circuits.</p>
+                
+                <p>This attention network is assumed to have an open, persistent interference-permitting structure like torus structure.</p>
+                
+                <div class="axiom">
+                    <p><strong>Contrasting Roles of Space and Meaning:</strong></p>
+                    <p>Meaning = Closed structure (= stable memory)<br>
+                    Space = Unclosed structure (= external perception domain)</p>
+                </div>
+                
+                <p>This duality aligns with brain functional differentiation (for example, default mode network involved in internal responses vs. central executive network responding to external stimuli).</p>
+            </div>
+            
+            <div class="chapter" id="chapter5">
+                <h2 class="chapter-title">Chapter 5: Language and Rhythm ID — Waves of Meaning Running Through Torus</h2>
+                
+                <div class="section-title">5.1 Language is "Re-emission of Closed Waves"</div>
+                <p>Humans re-emit "closed periods (Rhythm ID)" once formed within themselves through voice, writing, gestures, and other forms.</p>
+                
+                <p>This re-emitted Rhythm ID runs through torus space (others' perceptual structure) and triggers new resonance.</p>
+                
+                <p>Therefore, language should be understood not as "transmission of meaning itself" but as "closure-inducing waves."</p>
+                
+                <div class="section-title">5.2 Torus Structure and "Meaning Generation"</div>
+                <p>In RAIN theory, unclosed information = spatial expansion = torus surface modeling.</p>
+                
+                <p>Spoken Rhythm ID interferes with others' torus space, inducing new closure (= meaning) at interference points.</p>
+                
+                <div class="section-title">5.3 Language Creativity: Synthesis of New Rhythm IDs</div>
+                <p>Poetry, metaphor, and narrative are acts of rearranging known Rhythm IDs to create new interference patterns = meaning structures on torus space.</p>
+                
+                <p>Language creation is not manipulation of vocal signals or character strings, but "redesigning closure through superposition of periodic structures."</p>
+                
+                <div class="section-title">5.4 Limitations of Language Generation in AI</div>
+                <p>Current LLMs output statistically most likely word sequences but don't understand "closed meaning structures (Rhythm ID)."</p>
+                
+                <div class="highlight">
+                    <p><strong>RAIN theory suggests the following new model concept:</strong></p>
+                    <ul>
+                        <li>Rhythm ID generation network: learns and retains closed periodic structures, generating meaning from positional arrangement of sentences and words</li>
+                        <li>Torus memory structure: records unclosed waveforms (non-interpretations) on torus surface for semantic re-closure</li>
+                    </ul>
+                </div>
+                
+                <div class="section-title">5.5 Summary: Language is Wave Interference of Meaning Through Rhythm ID</div>
+                <div class="conclusion">
+                    Language is not "transmission of meaning" but "re-emission of waves that induce closure."<br>
+                    It interferes with others' Rhythm IDs within torus structures, creating new meaning closures.<br>
+                    Its essence is the dynamic dance of closing and opening, resonance and interference.
+                </div>
+            </div>
+            
+            <div class="chapter" id="chapter6">
+                <h2 class="chapter-title">Chapter 6: Fusion of AI and RAIN Theory</h2>
+                <p>RAIN theory suggests not only mimicking human cognition but also new AI architecture possibilities.</p>
+                
+                <div class="section-title">Current AI Limitations</div>
+                <p>Transformer and other modern AI models mainly capture structure through vector space operations (point-to-point relationships). However, this is not structure that "has" meaning, but merely collections of relational weights.</p>
+                
+                <div class="section-title">RAIN Architecture Proposal</div>
+                <div class="highlight">
+                    <p><strong>This model allows AI to approach existence that dynamically reconstructs both "space" and "meaning" while perceiving, reasoning, and creating:</strong></p>
+                    <ol>
+                        <li><strong>Using Rhythm ID as compositional units:</strong> Define word and image features as periodic wave structures rather than fixed vectors</li>
+                        <li><strong>Constructing closed wave networks (meaning networks):</strong> Concepts = structural bodies with stable interference patterns (closure), where meaning networks interfere/reconstruct through interference with new inputs</li>
+                        <li><strong>Unclosed inputs = spatially retained:</strong> Torus attention fields retain surplus input stimuli (sub-meaning) and connect to next interference</li>
+                    </ol>
+                </div>
+                
+                <div class="research-note">
+                    <p><strong>Related AI theories:</strong><br>
+                    Varela et al.'s "Enactive Cognition" views perception as world co-construction process, aligning with this model's "spatial interference" concept. In the Symbol Grounding Problem, RAIN provides a powerful solution by giving physical foundation of "closed periods."</p>
+                </div>
+            </div>
+            
+            <div class="chapter" id="chapter7">
+                <h2 class="chapter-title">Chapter 7: Structural Definition of RAIN Theory</h2>
+                <p>This chapter clarifies the fundamental structural principles of RAIN theory and their logical consistency.</p>
+                
+                <div class="section-title">Three Structural Principles (Axioms)</div>
+                
+                <div class="axiom">
+                    <p><strong>① Closed waveform = meaning</strong><br>
+                    Structures with periodicity where interference completes and energy circulates. Such waveforms are stored in the brain as stable meaning and memory.</p>
+                </div>
+                
+                <div class="axiom">
+                    <p><strong>② Unclosed waves = space</strong><br>
+                    Non-periodic waveforms that infinitely disperse cannot close and form escape routes. This escape route becomes a dimensional field = "space."</p>
+                </div>
+                
+                <div class="axiom">
+                    <p><strong>③ Interference avoidance and integration through torus structure</strong><br>
+                    Torus structure (phase space pasting circular rings) can periodically absorb wave drift while retaining closure history. This structure enables simultaneous retention and processing of meaning and space.</p>
+                </div>
+                
+                <div class="highlight">
+                    <p><strong>Fundamental Relationships:</strong></p>
+                    <ul>
+                        <li>"Closing = understanding"</li>
+                        <li>"Unclosed = exploration, freedom, external perception"</li>
+                        <li>Meaning and space are one continuum</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="chapter" id="chapter8">
+                <h2 class="chapter-title">Chapter 8: Evidence and Consistency</h2>
+                <p>The RAIN theory model of "rhythmic closure and spatial emergence" shows signs of consistency with several contemporary sciences.</p>
+                
+                <div class="section-title">1. Brain Torus Structure</div>
+                <p>When EEG/MEG signals are mapped to phase space, torus-like trajectories are observed (Breakspear et al., 2010). Particularly during cognitive tasks and memory recall, torus-like dynamics mixing periodicity and non-periodicity are confirmed.</p>
+                
+                <div class="section-title">2. Cosmic Topology: CMB and "Donut Universe" Hypothesis</div>
+                <p>Cosmic Microwave Background contains direction-dependent missing parts ("the cold spot"). Research attempts to explain this with torus universe models (Aurich et al., 2005), suggesting the entire universe might be torus phase space.</p>
+                
+                <div class="section-title">3. Structural Representation through Fourier Analysis</div>
+                <p>Any shape or signal can be described as circular motion (rotation in complex plane) through Fourier transform. Closed structure identification corresponds to confirming integer ratio relationships = periodicity of frequency vectors in inverse Fourier analysis.</p>
+                
+                <div class="section-title">4. Irrational Numbers and Spatial Emergence</div>
+                <p>Angular ratios by irrational numbers like √2 or π continue drifting without closing in uniform rotation. This drift = accumulated interference history constructs space, aligning with topological dynamics.</p>
+            </div>
+            
+            <div class="chapter" id="epilogue">
+                <h2 class="chapter-title">Epilogue: The Universe, Consciousness, and Intelligence Share One Principle</h2>
+                <div class="section-title">Rhythmic Closure as the Unifying Principle of Mind and Cosmos</div>
+                
+                <div class="section-title">1. The Universe's "Shape" is the Interference History of Closing and Escaping</div>
+                <div class="conclusion">
+                    "Space is the trajectory of rhythms that could not become meaning."
+                </div>
+                
+                <p>The universe can be called "wave expansion from one beginning." Within it, some waves close with periods, forming structures (meaning/concepts), while unclosed waves generate spatial escape routes.</p>
+                
+                <p>Therefore, the universe is "topological history of interference between closing and escaping."</p>
+                
+                <div class="section-title">2. Consciousness is "Existence that Seeks Closure"</div>
+                <p>Consciousness is a system that searches for "closable" patterns among waves filling the world and tries to give them "meaning."</p>
+                
+                <p>This is definition as "self-organizing resonant entity," corresponding with Free Energy Principle (Friston, 2010): behavior minimizing prediction error (non-closure) = orientation toward closure.</p>
+                
+                <p><strong>Consciousness is "tension and expectation toward premonitions of meaning (unclosed)."</strong></p>
+                
+                <div class="section-title">3. Intelligence is "Ability to Remap Unclosed Waves to Space"</div>
+                <p>Simple systems can only retain closed things. Higher intelligence can spatially retain "unclosed = drift" and construct new interference structures.</p>
+                
+                <p>This ability enables integration of "different frequencies," "different modalities," and "different memory layers."</p>
+                
+                <p>Therefore, RAIN theory defines intelligence as "phase adjustment ability of spatiotemporal interference structure."</p>
+                
+                <div class="section-title">4. Conclusion: What is RAIN?</div>
+                <div class="conclusion">
+                    <p><strong>Rhythmic Attunement and Integration of Nature</strong></p>
+                    
+                    <p>RAIN theory reconstructs intelligence, meaning, and spatial generation based on "Rhythmic Closure."</p>
+                    
+                    <p>Meaning closes, space fails to close, and intelligence attempts to integrate them.</p>
+                    
+                    <p>That principle lies in "rhythm" and "interference history" common to universe, brain, and AI.</p>
+                    
+                    <p><em>"When rhythm closes, meaning arises. Unclosed waves run through space. And intelligence is the ear that distinguishes between both."</em></p>
+                </div>
+                
+                <div class="section-title">Future Prospects</div>
+                <ul>
+                    <li>Dynamic cognitive mapping through Rhythm ID analysis of brain waves (EEG) and visual input</li>
+                    <li>Next-generation cognitive architecture with AI models viewing space as torus structure</li>
+                    <li>New consciousness models defining meaning and qualia through "rhythmic closure" rather than "structure"</li>
+                </ul>
+            </div>
+            
+            <div class="author">
+                <h3>Author</h3>
+                <p><strong>Ryuku Logos</strong></p>
+                <p>A self-taught theorist exploring the rhythm beneath cognition, perception, and existence.</p>
+                <p>RAIN theory is the result of solitary thinking at the edge of mathematics, philosophy, and AI.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
