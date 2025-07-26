@@ -13,8 +13,8 @@ This repository presents the RAIN theory — a model of how space, cognition, an
 
 ## 📄 Full Paper (PDF)
 
-- 🇯🇵 Japanese version: [RAIN理論 最終版PDF](https://github.com/RyukuLogos/RAIN_Emergence_Model_2025/blob/main/rain%E4%BD%93%E7%B3%BB%E8%AB%96jp.pdf)
-- 🇬🇧 English version: [RAIN Theory Final PDF](https://github.com/RyukuLogos/RAIN_Emergence_Model_2025/blob/main/rain%E4%BD%93%E7%B3%BB%E8%AB%96eng.pdf)
+- 🇯🇵 Japanese version: [RAIN理論 最終版PDF](https://github.com/RyukuLogos/RAIN_Emergence_Model_2025/blob/main/RAINepicjp.pdf)
+- 🇬🇧 English version: [RAIN Theory Final PDF]()
 
 ---
 
