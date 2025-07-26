@@ -5,6 +5,10 @@
 
 This repository presents the RAIN theory — a model of how space, cognition, and meaning emerge from rhythmic closure and topological dynamics.
 
+## 📘 HTML
+
+- English（HTML）: [https://ryukulogos.github.io/RAIN_Emergence_Model_2025/](https://ryukulogos.github.io/RAIN_Emergence_Model_2025/)
+
 ---
 
 ## 📄 Full Paper (PDF)
